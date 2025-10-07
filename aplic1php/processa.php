@@ -6,7 +6,7 @@ $mensagem = $_POST['mensagem'];
 
 ?>
 <!DocType html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
         <title>Dados Recebidos </title>
