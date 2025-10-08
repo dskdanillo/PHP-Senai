@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="js/validarFormulario.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <form action="processa.php" method="post" onsubmit="return validaFormulario()">
+
+        <h2>Formulário de Boas-Vindas</h2>
+
+        <div class="input-grupo"></div>
+
+        <label for="Nome">Nome Completo</label>
+        <input type="text" name="nome" id="nome"><!--é no input que colocamos o type e id-->
+
+        </div>
+        <div class="botoes"></div>
+
+        <button type="submit">ENVIAR</button><button type="reset">LIMPAR</button>
+        </div>
+
+
+    </form>
 </body>
+
 </html>
-
-
-
-
-
-
-
 
 
 <!--<!DOCTYPE html>

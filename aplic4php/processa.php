@@ -1,25 +1,23 @@
 <?php
 
-function sair(){
-
-    echo "<br><a href='index.html'>Voltar</a>";
-}
-
-if($_SERVER['REQUEST_METHOD']==='POST'){
-
-    $numero = $_POST['numero'] ?? '';
-    
-    //verifica se o campo está vazio
-
-    if($numero % 2 === 0){
-
-        echo "É um número par.<br>";
-        sair();
-
-    }else{
-        echo "É um número impar.<br>";
-        sair();
+    function sair(){
+        echo "<br><a href='index.html'>Voltar</a>";
 
     }
-}
+     //vereifica se o campo esta vazio.
+    if($_SERVER['REQUEST_METHOD']==='POST'){
+        $numero = $_POST['numero'] ?? '';
+       
+        //verificação se é par 
+
+        if($numero % 2 === 0){
+            echo "Este número é Par";
+            sair();
+        //Ser não for Par, verifica se é Impar .
+        }else{
+            echo "Este número é Impar";
+            sair();
+        }
+    }
+
 ?>
