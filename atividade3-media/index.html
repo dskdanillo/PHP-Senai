@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de média</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/validarFormulario.js"></script>
+</head>
+
+<body>
+
+    <form action="processa.php" method="post" onsubmit="return validaFormulario()">
+        <h1>Calculo de Média com 4 campos numéricos e Somatória por estrutura FOR</h1>
+        <div class="input grupo">
+
+            <label for="Digite nota 1 : "></label>
+            <input type="number" name="num1" id="num1" placeholder="Insira um valor">
+
+            <label for="Digite nota 2 :"></label>
+            <input type="number" name="num2" id="num2" placeholder="Insira um valor">
+
+            <label for="Digite nota 3 : "></label>
+            <input type="number" name="num3" id="num3" placeholder="Insira um valor">
+
+            <label for="Digite nota 4 : "></label>
+            <input type="number" name="num4" id="num4" placeholder="Insira um valor">
+
+        </div>
+        <div class="button">
+
+            <button type="submit">ENVIAR</button> <button type="reset">LIMPAR</button>
+
+        </div>
+    </form>
+</body>
+
+</html>
