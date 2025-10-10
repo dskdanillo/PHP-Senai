@@ -11,7 +11,7 @@ body{
 
 form {
 
-    background: rgb(218, 24, 24);
+    background: rgb(49, 196, 196);
     padding:20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(247, 77, 196, 0.973);
@@ -32,7 +32,7 @@ label{
     font-weight: bold;
 }
 
-input,textarea,button{
+input,textarea,button,campo-numero {
     width: 80%;
     padding: 8px;
     margin-top: 5px;
@@ -47,6 +47,8 @@ button{
     margin-top: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+
+    
 }
 
 button:hover{
