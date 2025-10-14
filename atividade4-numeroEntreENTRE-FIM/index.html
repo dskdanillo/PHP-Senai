@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 4  - Difina o inico o o fim e mostre os numeros entre eles</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/validacoes.js"></script>
 </head>
 <body>
-    <form action="processa.php" method="post"onsubmit="return validaFormulario()"></form>
+    <form action="processa.php" method="post"onsubmit="return validaFormulario()">
   
-    <div class="input-grupo"></div>
+    <div class="input-grupo">
     
     <h1>INCIO E FIM apresentação de valores entre eles</h1>
 
@@ -16,7 +18,12 @@
     <input type="number" name="inicio" id="inicio">
 
     <label for="Fim">Número Final</label>
-    <input type="number" type="fim">
+    <input type="number" name="fim" id="fim">
+</div>
+<div class="button">
 
+    <button type="submit">ENVIAR</button>
+</div>
+</form>
 </body>
 </html>

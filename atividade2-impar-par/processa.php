@@ -8,14 +8,14 @@ function sair()
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $numero = $_POST['numero'] ?? '';
 
-    //verificação se é par 
+  
 
-    if ($numero % 2 === 0) {
+    if ($numero % 2 === 0) {  //verificação se é par 
         echo "Este número é Par";
         sair();
-        //Ser não for Par, verifica se é Impar .
+        
     } else {
-        echo "Este número é Impar";
+        echo "Este número é Impar";//Ser não for Par, verifica se é Impar .
         sair();
     }
 }
