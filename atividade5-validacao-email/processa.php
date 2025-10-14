@@ -20,11 +20,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if (count($partes) < 2) { // count contas as separações e neste caso Se não houver pelo menos duas partes, não contém "@"
 
-            echo "<p>Formato inválido :/p>";
+            echo "<p>Formato inválido :</p>";
             sair();
         } else {
-            // E-mail válido
-            echo "<p>E-mail recebido : $email</p>";
+       
+            echo "<p>E-mail recebido : $email</p>";     // email ok
             sair();
         }
     }

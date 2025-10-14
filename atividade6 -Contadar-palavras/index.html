@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador de Palavras</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacoes.js" defer></script>
 </head>
-
 <body>
     <form action="processa.php" method="post" onsubmit="return validaTexto()">
         <h1>Contador de Palavras</h1>
 
         <label for="texto">Digite seu texto:</label><br>
-        <textarea name="texto" id="texto" rows="6" placeholder="Digite aqui..."></textarea>
+        <textarea name="texto" id="texto" rows="6" placeholder="Digite aqui..." oninput="contarPalavras()"></textarea>
+
         <p id="contador">Palavras: 0</p>
 
         <button type="submit">Enviar</button>
     </form>
 </body>
-
 </html>

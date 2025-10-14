@@ -1,23 +1,22 @@
 <?php
-function sair() {
-    echo '<br><a href="index.html"><button type="button">Voltar</button></a>';
-}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $texto = $_POST["texto"] ?? '';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $texto = $_POST['texto'] ?? '';
+    $total = str_word_count($texto, 0); // Conta palavras
 
-    echo "<h1>Resultado da Contagem</h1>";
+    echo "<h1>Resultado</h1>";
+    echo "<p>Total de palavras: $total</p>";
 
-    if (empty($texto)) {
-        echo "<p>Nenhum texto foi informado.</p>";
-        sair();
+    if ($total < 20) {
+        echo "<p>Texto curto.</p>";
+    } elseif ($total <= 50) {
+        echo "<p>Texto médio.</p>";
     } else {
-        // separa palavras
-        $palavras = preg_split('/\s+/', trim($texto));
-        $total = count($palavras);
-        echo "<p><strong>Texto enviado:</strong><br>$texto</p>";
-        echo "<p><strong>Total de palavras:</strong> $total</p>";
-        sair();
+        echo "<p>Texto longo.</p>";
     }
+
+    echo "<br><a href='index.html'>Voltar</a>";
+} else {
+    echo "Acesso inválido.";
 }
 ?>
