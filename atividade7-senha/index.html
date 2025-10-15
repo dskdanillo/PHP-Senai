@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Senha</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/validacoes.js" defer></script>
+</head>
+<body>
+    <form action="processa.php" method="post" onsubmit="return validarSenha()">
+        <h1>Validação de Senha</h1>
+    
+        <label for="senha">Digite uma senha:</label><br>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+    
+
+        <div class="instrucoes">
+            <p><strong>Requisitos da senha:</strong></p>
+            <p>○ Pelo menos 8 caracteres.</p>
+            <p>○ Uma letra maiúscula.</p>
+            <p>○ Um número.</p>
+        </div>
+    
+        <p id="mensagem-senha" class="mensagem"></p>
+    
+        <div class="button">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* Remove margens e define altura total */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Container para centralizar o form */
+  body {
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
+    height: 100vh;           /* altura total da viewport */
+  }
+  
+  /* Form estilizado */
+  form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 350px;
+    box-sizing: border-box;
+  }
+  
+  /* Label em bloco e espaçamento */
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  /* Input ocupa toda largura */
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Parágrafo de mensagem */
+  .mensagem {
+    margin-top: 10px;
+    height: 20px; /* para não mudar o layout quando vazio */
+    font-size: 0.9rem;
+    color: red; /* pode ser alterado via JS */
+  }
+  
+  /* Botão ocupa toda largura */
+  .button button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Cor do botão ao passar o mouse */
+  .button button:hover {
+    background-color: #0056b3;
+  }
+  
