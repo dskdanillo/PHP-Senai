@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APLIC3PHP</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/validacoes.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: blue;"><strong>Contador de Números</strong></h1>
+
+        <form action="processa.php" method="POST" onsubmit="return validaFormulario()">
+
+            <label for="inicio">Número Inicial</label>
+            <input type="text" id="inicio" name="inicio">
+
+            <label for="fim">Número Final</label>
+            <input type="text" name="fim" id="fim"><br>
+
+            <button type="submit">CONTAR</button>
+ 
+        </form>
+    </div>
+    
+</body>
+</html>

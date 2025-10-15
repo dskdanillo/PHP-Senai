@@ -23,7 +23,7 @@ function validaFormulario() {
     }
 
 
-    inicio = Number(inicio); // Converte os valores para número
+    inicio = Number(inicio); // Coverte os valores para número
     fim = Number(fim);
 
 

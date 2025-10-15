@@ -3,12 +3,11 @@ function validarFormulario() {
   const produto = document.getElementById("produto").value.trim();
   const preco = document.getElementById("preco").value.trim();
 
-  // Permitir finalizar mesmo sem preencher
+
   if (botao === "finalizar") {
     return true;
   }
 
-  // Validação para adicionar
   if (produto === "" || preco === "") {
     alert("Preencha produto e preço antes de adicionar.");
     return false;
@@ -23,7 +22,7 @@ function validarFormulario() {
   return true;
 }
 
-// Resetar a lista
+
 function resetarLista() {
   if (confirm("Deseja realmente limpar toda a lista?")) {
     window.location.href = "processa.php?reset=1";

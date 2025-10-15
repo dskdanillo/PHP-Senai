@@ -6,9 +6,9 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
 
     $nome = $_POST['nome'] ?? '';
     
-    //verifica se o campo está vazio
+   
 
-    if(empty($nome)){
+    if(empty($nome)){ //verifica se o campo está vazio
 
         echo "Por favor, digite seu nome.<br>";
 

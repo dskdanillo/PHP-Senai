@@ -8,23 +8,23 @@ if (isset($_GET['reset'])) {
     exit;
 }
 
-// Inicializa array de produtos
-if (!isset($_SESSION['produtos'])) {
+
+if (!isset($_SESSION['produtos'])) {// Inicializa array de produtos
     $_SESSION['produtos'] = [];
 }
 
-// Captura dados
-$produto = $_POST['produto'] ?? '';
+
+$produto = $_POST['produto'] ?? '';// Captura dados
 $preco = $_POST['preco'] ?? '';
 $acao = $_POST['acao'] ?? '';
 
-// Função para validar preço
-function precoValido($valor) {
+
+function precoValido($valor) {// Função para validar preço
     return preg_match('/^[0-9]+([.,][0-9]{1,2})?$/', $valor);
 }
 
-// Adicionar produto
-if ($acao === 'adicionar') {
+
+if ($acao === 'adicionar') {// Adicionar produto
     if (empty($produto) || empty($preco)) {
         echo "<h2>Preencha todos os campos antes de adicionar.</h2>
         <a href='index.html'><button type='button'>Voltar</button></a>";

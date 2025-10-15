@@ -31,5 +31,5 @@ function validaFormulario() {
     return false;
   }
 
-  return true; // Tudo certo
+  return true; 
 }

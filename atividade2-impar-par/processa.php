@@ -4,8 +4,8 @@ function sair()
 {
     echo "<br><a href='index.html'>Voltar</a>";
 }
-//vereifica se o campo esta vazio.
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {//vereifica se o campo esta vazio.
     $numero = $_POST['numero'] ?? '';
 
   

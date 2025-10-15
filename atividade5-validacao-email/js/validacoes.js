@@ -1,7 +1,7 @@
 function validaFormulario() {
     var email = document.getElementById("email").value.trim();
 
-    // Expressão regular simplificada e segura para validar e-mails
+    
     var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
    
