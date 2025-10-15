@@ -1,27 +1,31 @@
-function validaFormulario() {
-    var produto = document.getElementById("produto");
-    var preco = document.getElementById("preco");
+function validarFormulario() {
+  const botao = document.activeElement.value; // Descobre qual botão foi clicado
+  const produto = document.getElementById("produto").value.trim();
+  const preco = document.getElementById("preco").value.trim();
 
-    if (produto.value.trim() === "") {
-        alert("Por favor, preencha o nome do produto.");
-        produto.focus();
-        return false;
-    }
-
-    if (preco.value.trim() === "") {
-        alert("Por favor, preencha o preço: .");
-        preco.focus();
-        return false;
-    }
-
-    // Regex para validar preço: apenas números, ponto ou vírgula, e no mínimo um número
-    var regexPreco = /^[0-9]+([.,][0-9]{1,2})?$/;
-
-    if (!regexPreco.test(preco.value.trim())) {
-        alert("Preço inválido. Use somente números e vírgula ou ponto.");
-        preco.focus();
-        return false;
-    }
-
+  // Permitir finalizar mesmo sem preencher
+  if (botao === "finalizar") {
     return true;
+  }
+
+  // Validação para adicionar
+  if (produto === "" || preco === "") {
+    alert("Preencha produto e preço antes de adicionar.");
+    return false;
+  }
+
+  const regex = /^[0-9]+([.,][0-9]{1,2})?$/;
+  if (!regex.test(preco)) {
+    alert("Preço inválido. Use apenas números e vírgula ou ponto.");
+    return false;
+  }
+
+  return true;
+}
+
+// Resetar a lista
+function resetarLista() {
+  if (confirm("Deseja realmente limpar toda a lista?")) {
+    window.location.href = "processa.php?reset=1";
+  }
 }

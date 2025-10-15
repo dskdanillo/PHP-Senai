@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Produtos</title>
-  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/estilo.css">
   <script src="js/validacoes.js" defer></script>
 </head>
 <body>
-  <form action="processa.php" method="post" onsubmit="return validaFormulario()">
-    <h1>Lista de Produtos</h1>
+  
+  <form action="processa.php" method="post" onsubmit="return validarFormulario()">
+    <h1>Cadastro de Produtos</h1>
+    <label>Produto:</label><br>
+    <input type="text" name="produto" id="produto"><br><br>
 
-    <label for="produto">Nome do produto:</label><br />
-    <input type="text" id="produto" name="produto" placeholder="Nome do produto" required /><br />
+    <label>Preço:</label><br>
+    <input type="text" name="preco" id="preco"><br><br>
 
-    <label for="preco">Preço:</label><br />
-    <input type="text" id="preco" name="preco" placeholder="Ex: 19,90 ou 20.50" required /><br />
-
-    <button type="submit">Adicionar Produto</button>
+    <button type="submit" name="acao" value="adicionar">Adicionar Produto</button>
+    <button type="submit" name="acao" value="finalizar">Finalizar Lista</button>
+    <button type="button" onclick="resetarLista()">Resetar Lista</button>
   </form>
 </body>
 </html>

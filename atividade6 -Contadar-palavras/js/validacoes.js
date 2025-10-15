@@ -1,22 +1,22 @@
-function contarPalavras() {
-    var texto = document.getElementById("texto").value;
+const textarea = document.getElementById("texto");
+const contador = document.getElementById("contador");
 
-    // Regex para contar palavras com acentos, cedilha etc.
-    var palavras = texto.trim().match(/\b[\wÀ-ÿ']+\b/g);
-    var total = palavras ? palavras.length : 0;
+// Contagem em tempo real
+textarea.addEventListener("input", function() {
+    const texto = textarea.value.trim();
+    // separa palavras usando regex (espaços e quebras de linha)
+    const palavras = texto.match(/\b\w+\b/g);
+    const total = palavras ? palavras.length : 0;
+    contador.textContent = `Palavras: ${total}`;
+});
 
-    document.getElementById("contador").innerText = "Palavras: " + total;
-}
-
+// Validação antes do envio
 function validaTexto() {
-    var texto = document.getElementById("texto").value.trim();
-    var palavras = texto.match(/\b[\wÀ-ÿ']+\b/g);
-    var total = palavras ? palavras.length : 0;
-
-    if (total === 0) {
-        alert("Digite algum texto antes de enviar.");
+    const texto = textarea.value.trim();
+    if (texto === "") {
+        alert("O campo de texto está vazio!");
+        textarea.focus();
         return false;
     }
-
     return true;
 }

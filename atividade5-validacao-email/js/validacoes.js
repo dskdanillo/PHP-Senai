@@ -1,20 +1,22 @@
-function validaFormulario() { 
+function validaFormulario() {
+    var email = document.getElementById("email").value.trim();
 
-var email = document.getElementById("email").value.trim();
-var emailRegex = new RegExp("^([A-z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$");
+    // Expressão regular simplificada e segura para validar e-mails
+    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
- if (email === "") {
-        alert("O campo de email está vazio!");
+   
+    if (email === "") { // Verifica se o campo está vazio
+        alert("O campo de e-mail está vazio!");
         document.getElementById("email").focus();
         return false;
+    }
 
+    
+    if (!emailRegex.test(email)) {// Verifica se o formato é válido
+        alert("Preencha o campo de e-mail corretamente!");
+        document.getElementById("email").focus();
+        return false;
+    }
 
-if (!emailRegex.test(email)) {
-
-    alert("Preencha o campo de e-mail correntamente!");
-    document.getElementById("email").focus();
-    return false;
-}
-return true;
-}
+        return true;
 }

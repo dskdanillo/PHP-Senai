@@ -58,3 +58,30 @@ p {
   max-width: 400px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
+
+ul {
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: 10px auto;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+a button {
+  width: auto;
+  padding: 8px 16px;
+  background-color: #6c757d;
+}
+
+a button:hover {
+  background-color: #5a6268;
+}

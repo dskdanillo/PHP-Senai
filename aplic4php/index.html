@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Múltiplos</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/valida.js" defer></script>
+</head>
+<body>
+
+  
+
+  <form action="processa.php" method="post" onsubmit="return validaFormulario()">
+    <h1>Gerador de Múltiplos</h1>
+    <label for="numero">Número Base:</label>
+    <input type="text" name="numero" id="numero">
+
+    <label for="limite">Limite Máximo:</label>
+    <input type="text" name="limite" id="limite">
+
+    <button type="submit">Gerar</button>
+  </form>
+
+</body>
+</html>

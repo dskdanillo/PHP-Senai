@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defina o Inicio e o fim numerico e ele te informar os alores entre eles</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+    <script src="./js/validacoes.js"></script>
+</head>
+
+<body>
+
+
+
+    <form action="processa.php" method="post" onsubmit="return validaFormulario()">
+        <div class="input-grupo">
+            <h1 class="titulo">Valores entre Início e Fim</h1>
+            <label for="inicio">1º Valor :</label>
+            <input type="number" name="inicio" id="inicio" placeholder="Digite 1º valor"><br><br>
+
+            <label for="fim">2º Valor :</label>
+            <input type="number" name="fim" id="fim" placeholder="Digite 2º valor"><br><br>
+        </div>
+
+        <div class="button">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+
+</body>
