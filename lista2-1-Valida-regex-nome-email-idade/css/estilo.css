@@ -1,0 +1,119 @@
+/* Define a fonte padrão da página e cor de fundo */
+body {
+  font-family: Arial, sans-serif; /* fonte Arial ou sans-serif como fallback */
+  background-color: #f7f7f7;      /* cor de fundo suave */
+  padding: 20px;                   /* espaço interno na borda da tela */
+}
+
+/* Estilo do título principal */
+h1 {
+  text-align: center; /* centraliza o texto */
+  color: #333;        /* cor do texto em cinza escuro */
+}
+
+/* Estilo do formulário */
+form {
+  background: white;             /* fundo branco para o formulário */
+  padding: 20px 30px;            /* espaçamento interno: 20px topo/baixo, 30px lados */
+  max-width: 400px;              /* largura máxima do formulário */
+  margin: 0 auto;                /* centraliza horizontalmente */
+  border-radius: 6px;            /* cantos arredondados */
+  box-shadow: 0 0 8px rgba(0,0,0,0.1); /* sombra leve ao redor */
+}
+
+/* Estilo dos labels */
+label {
+  font-weight: bold; /* deixa o texto em negrito */
+  margin-top: 10px;  /* espaço acima do label */
+  display: block;    /* força quebra de linha antes e depois */
+}
+
+/* Estilo dos inputs do tipo texto */
+input[type="text"] {
+  width: 100%;          /* ocupa toda a largura do formulário */
+  padding: 8px;         /* espaço interno do input */
+  margin-top: 5px;      /* espaço acima do input */
+  box-sizing: border-box; /* inclui padding e border no cálculo de largura */
+  border: 1px solid #ccc; /* borda cinza clara */
+  border-radius: 4px;      /* cantos arredondados do input */
+}
+
+/* Estilo do botão de enviar */
+button {
+  margin-top: 15px;          /* espaço acima do botão */
+  width: 100%;               /* botão ocupa 100% da largura do formulário */
+  background-color: #007BFF; /* cor azul do botão */
+  color: white;              /* texto branco */
+  padding: 10px;             /* espaço interno */
+  font-size: 1rem;           /* tamanho da fonte */
+  border: none;              /* sem borda */
+  border-radius: 5px;        /* cantos arredondados */
+  cursor: pointer;           /* cursor muda ao passar mouse */
+  transition: background-color 0.3s ease; /* transição suave ao mudar cor */
+}
+
+/* Efeito hover no botão de enviar */
+button:hover {
+  background-color: #0056b3; /* azul mais escuro ao passar o mouse */
+}
+
+/* Estilo dos parágrafos de mensagens gerais */
+p {
+  background: #fff;                       /* fundo branco */
+  padding: 8px;                           /* espaço interno */
+  border-radius: 5px;                     /* cantos arredondados */
+  margin: 8px auto;                       /* margem superior/inferior e centraliza horizontalmente */
+  max-width: 400px;                       /* largura máxima do parágrafo */
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);   /* sombra leve */
+  text-align: center;                     /* centraliza o texto */
+}
+
+/* Estilo dos links */
+a {
+  text-align: center;    /* centraliza o link */
+         /* exibe como bloco */
+  margin-top: 20px;      /* distância do topo */
+  text-decoration: none; /* remove sublinhado */
+}
+
+/* Container da página de resposta */
+.resposta {
+  background: white;                       /* fundo branco */
+  padding: 20px 30px;                      /* espaçamento interno */
+  max-width: 400px;                        /* largura máxima */
+  margin: 0 auto;                          /* centraliza horizontalmente */
+  border-radius: 6px;                      /* cantos arredondados */
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);    /* sombra leve */
+}
+
+/* Parágrafos dentro do container de resposta */
+.resposta p {
+  margin: 10px 0; /* margem acima e abaixo */
+}
+
+/* Links dentro do container de resposta */
+.resposta a {
+  display: inline-block; /* faz o link ocupar apenas o espaço do botão */
+  margin-top: 15px;      /* espaço acima */
+  text-decoration: none; /* remove sublinhado */
+  text-align: center;    /* centraliza conteúdo do link */
+}
+
+/* Botão dentro do link da resposta */
+.resposta a button {
+  width: auto;            /* largura automática baseada no conteúdo */
+  min-width: 120px;       /* largura mínima para ficar confortável */
+  padding: 8px 16px;      /* espaçamento interno menor, ajustável */
+  background-color: #17e933;  /* cor verde */
+  color: white;           /* texto branco */
+  font-size: 1rem;        /* tamanho da fonte */
+  border: none;           /* sem borda */
+  border-radius: 5px;     /* cantos arredondados */
+  cursor: pointer;        /* cursor de clique */
+  transition: background-color 0.3s ease; /* efeito suave ao passar mouse */
+}
+
+/* Efeito hover no botão de resposta */
+.resposta a button:hover {
+  background-color: #0056b3; /* muda a cor ao passar o mouse */
+}

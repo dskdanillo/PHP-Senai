@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(40, 43, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: aliceblue;
+}
+
+.campo_texto {
+    height: 20px;
+    border: 2px solid rgb(65, 70, 75);
+    padding: 5px;
+    background-color: rgb(224, 226, 230);
+
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.ordem {
+    width: 45%;
+    padding: 10px 20px;
+    background-color: rgb(95, 104, 230);
+    color: white;
+    border-radius: 2px;
+    border: none;
+    transition: transform 0.2s ease;
+
+}
+
+.ordem:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    background-color: rgb(67, 81, 202);
+    cursor: pointer;
+
+}
+
+.limpar {
+    width: 45%;
+    padding: 10px 20px;
+    background-color: rgb(230, 95, 95);
+    color: white;
+    border-radius: 2px;
+    border: none;
+    transition: transform 0.2s ease;
+
+}
+
+.limpar:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    background-color: rgb(202, 67, 67);
+    cursor: pointer;
+
+}
+
+.gerar {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(96, 182, 115);
+
+    color: white;
+    border-radius: 2px;
+    border: none;
+    transition: transform 0.2s ease;
+
+}
+
+.gerar:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    background-color: rgb(72, 143, 87);
+
+    cursor: pointer;
+
+}
+
+textarea {
+    padding: 5px;
+    border: 2px solid rgb(65, 70, 75);
+    background-color: rgb(224, 226, 230);
+    border-radius: 2px;
+    padding: 5px;
+
+}
+
+.container_form {
+    width: 250px;
+    border-radius: 5px;
+    background-color: rgb(57, 60, 63);
+    border: 2px solid rgb(65, 70, 75);
+    box-shadow: 0px 0px 5px rgba(26, 29, 31, 0.87);
+    padding: 30px;
+}
