@@ -13,7 +13,7 @@ h1 {
 
 /* Estilo do formulário */
 form {
-  background: white;             /* fundo branco para o formulário */
+  background: rgb(250, 246, 246);             /* fundo branco para o formulário */
   padding: 20px 30px;            /* espaçamento interno: 20px topo/baixo, 30px lados */
   max-width: 400px;              /* largura máxima do formulário */
   margin: 0 auto;                /* centraliza horizontalmente */
@@ -64,7 +64,7 @@ p {
   border-radius: 5px;                     /* cantos arredondados */
   margin: 8px auto;                       /* margem superior/inferior e centraliza horizontalmente */
   max-width: 400px;                       /* largura máxima do parágrafo */
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);   /* sombra leve */
+  /*box-shadow: 0 0 5px rgba(0,0,0,0.1);*/   /* sombra leve */
   text-align: center;                     /* centraliza o texto */
 }
 
@@ -104,7 +104,7 @@ a {
   width: auto;            /* largura automática baseada no conteúdo */
   min-width: 120px;       /* largura mínima para ficar confortável */
   padding: 8px 16px;      /* espaçamento interno menor, ajustável */
-  background-color: #17e933;  /* cor verde */
+  background-color: #5617e9;  /* cor verde */
   color: white;           /* texto branco */
   font-size: 1rem;        /* tamanho da fonte */
   border: none;           /* sem borda */
